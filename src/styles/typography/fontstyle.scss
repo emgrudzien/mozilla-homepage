@@ -1,0 +1,16 @@
+@mixin font {
+  font-family: Inter, LocaleSpecific, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@mixin fontBold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+@mixin fontBilboardHdl {
+  font-family: "Zilla Slab", serif;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}

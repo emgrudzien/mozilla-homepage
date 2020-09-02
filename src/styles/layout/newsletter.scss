@@ -1,0 +1,39 @@
+.newsletter {
+  width: 100%;
+  display: flex;
+  padding: 3rem 6rem;
+  .newsletter__side-left {
+    width: 50%;
+    display: block;
+    .newsletter__img {
+      max-width: 100%;
+      max-height: auto;
+    }
+  }
+  .newsletter__content {
+    width: 50%;
+    .newsletter__hdl {
+      @include fontBilboardHdl;
+      font-size: 2.5rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+    .newsletter__ui--primary {
+      &:active {
+        & + .newsletter__ui--secendary {
+          display: block;
+        }
+      }
+    }
+    .newsletter__ui--secendary {
+      display: none;
+      position: absolute;
+    }
+  }
+}
+@media (max-width: 780px) {
+  .newsletter {
+    flex-direction: column;
+  }
+}

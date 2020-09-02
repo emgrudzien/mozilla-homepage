@@ -1,0 +1,23 @@
+.newsletter__button {
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  @include fontBold;
+  width: 100%;
+  min-width: 256px;
+  max-width: 100%;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+.button-note {
+  @include font;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  display: block;
+  font-weight: 400;
+  margin-top: 0;
+}

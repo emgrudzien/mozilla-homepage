@@ -1,0 +1,122 @@
+.container {
+  box-sizing: border-box;
+  padding: 0 6rem;
+
+  .box {
+    display: flex;
+    align-items: center;
+    height: 5.5rem;
+    .button {
+      margin-left: auto;
+    }
+  }
+
+  .header__logo {
+  }
+  .menu {
+  }
+  .menu__list {
+    display: flex;
+    padding-inline-start: 1.125rem;
+  }
+  .menu__item {
+    list-style: none;
+    padding: 1rem 1rem 1.5rem;
+    z-index: 10;
+    &:hover {
+      border-bottom: 1px solid black;
+      & + .menu__submenu {
+        display: block;
+      }
+    }
+  }
+  .menu__submenu {
+    display: none;
+    position: absolute;
+    margin-top: 3.75rem;
+    z-index: 1;
+    width: 100%;
+    border-top: 1px solid #ededf0;
+    box-shadow: 0 16px 16px -16px rgba(0, 0, 0, 0.3);
+    left: 0;
+    &:hover {
+      display: block;
+      background-color: #fff;
+    }
+  }
+  .menu__submenu-container {
+    box-sizing: border-box;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.875rem 6rem;
+    .submenu__button-close {
+      display: block;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      height: 1rem;
+      padding: 0;
+      width: 1rem;
+    }
+    .menu__submenu-container--left {
+      max-width: 22.375rem;
+    }
+    .menu__submenu-container--right {
+      max-width: 21.875rem;
+    }
+    .menu__submenu-container--img {
+      max-width: 19.375rem;
+    }
+  }
+
+  .submenu__content {
+    padding: 0.25rem;
+    margin: 0.25rem;
+    @include font;
+    &:hover {
+      transition: box-shadow 0.1s ease-in-out;
+      box-shadow: 0 0 0 4px #ededf0;
+      border-radius: 2px;
+    }
+    .submenu__big-img {
+      width: 18.75rem;
+      height: auto;
+    }
+    .submenu__icon {
+      height: 1.5rem;
+      margin: 0;
+      width: 1.5rem;
+      float: left;
+      margin-top: 1.5rem;
+      padding-right: 0.5rem;
+    }
+    .submenu__content--hdl {
+      margin-left: 1.625rem;
+    }
+    .submenu__content-text {
+      margin-left: 1.625rem;
+    }
+  }
+  .submenu__list {
+    padding: 0;
+    list-style-type: none;
+    margin-left: 1.625rem;
+    .submenu-list__item {
+      .submenu__item-link {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+
+  .menu__item--link {
+    @include fontBold;
+    text-decoration: none;
+    margin-bottom: 0;
+    color: #000;
+  }
+}

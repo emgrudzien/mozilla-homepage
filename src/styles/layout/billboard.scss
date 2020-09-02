@@ -1,0 +1,34 @@
+.billboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  zoom: 1;
+  margin: 6rem 1.5rem;
+  position: relative;
+  background: #ededf0;
+  margin-bottom: 6rem;
+
+  .billboard__image-cointainer {
+    .billboard__img {
+      width: 21.625rem;
+      height: auto;
+    }
+  }
+  .billboard__content {
+    width: 22.375rem;
+    text-align: center;
+    .billboard__content-hdl {
+      @include fontBilboardHdl;
+    }
+    .billboard__content-text {
+      @include font;
+    }
+  }
+}
+@media (max-width: 780px) {
+  .billboard {
+    flex-direction: column;
+  }
+}

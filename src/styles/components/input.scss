@@ -1,0 +1,29 @@
+.newsletter__lbl {
+  @include fontBold;
+  font-size: 0.875rem;
+  display: block;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  padding-bottom: 8px;
+  .privacy-link {
+  }
+}
+.newsletter__ui {
+  @include font;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 256px;
+  max-width: 100%;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 2px solid #9595a2;
+  line-height: 1.25;
+  margin: 0 0 24px;
+  padding: 8px;
+  cursor: text;
+  &:hover {
+    border-color: #0250bb;
+  }
+}
