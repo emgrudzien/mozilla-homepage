@@ -1,25 +1,38 @@
-.header__button {
-  background: red;
-  display: block;
-  box-sizing: border-box;
-  background-color: transparent;
-  border: 2px solid;
-  border-radius: 2px;
-  border-color: #0060df;
-  color: #0060df;
-  padding: 8px 16px;
-  text-decoration: none;
-  cursor: pointer;
-  float: right;
-  transition: background-color 0.1s, box-shadow 0.1s, color 0.1s, transform 0.1s;
-  @include font;
-  font-weight: 700;
-  height: 44px;
-  width: 172.26px;
+.button {
+  .header__button {
+    background: red;
+    display: block;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 2px;
+    border-color: #0060df;
+    color: #0060df;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    float: right;
+    transition: background-color 0.1s, box-shadow 0.1s, color 0.1s,
+      transform 0.1s;
+    @include font;
+    font-weight: 700;
+    height: 44px;
+    width: 172.26px;
+    &:hover {
+      background-color: #0060df;
+      border-color: transparent;
+      color: #fff;
+    }
+  }
+  @media screen and (max-width: 48rem) {
+    visibility: hidden;
+    // animation: bounce 2s 0.5s;
+    // transform-origin: center bottom;
+    &.show {
+      visibility: visible;
+      // margin-left: 50px;
 
-  &:hover {
-    background-color: #0060df;
-    border-color: transparent;
-    color: #fff;
+      // align-self: center;
+    }
   }
 }

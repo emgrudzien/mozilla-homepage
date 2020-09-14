@@ -19,16 +19,13 @@
       display: block;
       margin-bottom: 0.5em;
     }
-    .newsletter__ui--primary {
-      &:active {
-        & + .newsletter__ui--secendary {
-          display: block;
-        }
-      }
-    }
-    .newsletter__ui--secendary {
+
+    .newsletter__ui--secondary {
+      flex-direction: column;
       display: none;
-      position: absolute;
+      &.show {
+        display: flex;
+      }
     }
   }
 }

@@ -23,7 +23,15 @@ body {
       margin: 0 auto;
       max-width: 30.625rem;
       width: 100%;
+      @media screen and (max-width: 48rem) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+      }
       .logo-world {
+        align-self: center;
         width: 7.8125rem;
         height: auto;
       }
@@ -34,6 +42,9 @@ body {
         display: block;
         padding: 0;
         line-height: 52.8px;
+        @media screen and (max-width: 48rem) {
+          // display: inline-block;
+        }
       }
       .main-content-left__text {
         @include font;
@@ -46,6 +57,10 @@ body {
       }
       .main-content-left__button {
         margin: 0 0 24px;
+        align-self: center;
+        @media screen and (max-width: 48rem) {
+          display: inline-block;
+        }
       }
       .main-content-left__link {
         @include font;
@@ -60,11 +75,19 @@ body {
     .main-content-right {
       display: block;
       width: 100%;
+      @media screen and (max-width: 48rem) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
       .main-content-right__img {
         width: 41.4375rem;
         margin-right: 0;
         position: absolute;
+        @media screen and (max-width: 48rem) {
+          position: relative;
+        }
       }
     }
   }

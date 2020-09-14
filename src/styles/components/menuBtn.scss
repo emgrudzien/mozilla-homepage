@@ -1,0 +1,18 @@
+.menu__hamburger {
+  background: transparent url("../img/hamburger.svg") center;
+  background-repeat: no-repeat;
+
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: 0;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  margin-left: auto;
+  @media screen and (min-width: 48rem) {
+    display: none;
+  }
+}

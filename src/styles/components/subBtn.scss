@@ -1,0 +1,11 @@
+.submenu__btn--open {
+  background: transparent;
+  border: none;
+  .subBtn__img {
+    height: 20px;
+    display: none;
+    @media screen and (max-width: 48rem) {
+      display: inline-block;
+    }
+  }
+}
