@@ -1,4 +1,9 @@
 .button {
+  // display: flex;
+  // justify-content: center;
+}
+
+.button {
   .header__button {
     background: red;
     display: block;
@@ -30,7 +35,6 @@
     // transform-origin: center bottom;
     &.show {
       visibility: visible;
-      // margin-left: 50px;
 
       // align-self: center;
     }

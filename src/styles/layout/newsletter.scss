@@ -2,7 +2,12 @@
   width: 100%;
   display: flex;
   padding: 3rem 6rem;
-  .newsletter__side-left {
+  @media screen and (max-width: 48rem) {
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
+  }
+  .newsletter__side--left {
     width: 50%;
     display: block;
     .newsletter__img {
@@ -12,12 +17,18 @@
   }
   .newsletter__content {
     width: 50%;
+    @media screen and (max-width: 48rem) {
+      width: 70%;
+    }
     .newsletter__hdl {
       @include fontBilboardHdl;
       font-size: 2.5rem;
       font-weight: 700;
       display: block;
       margin-bottom: 0.5em;
+      @media screen and (max-width: 48rem) {
+        font-size: 1.5rem;
+      }
     }
 
     .newsletter__ui--secondary {
@@ -27,10 +38,5 @@
         display: flex;
       }
     }
-  }
-}
-@media (max-width: 780px) {
-  .newsletter {
-    flex-direction: column;
   }
 }

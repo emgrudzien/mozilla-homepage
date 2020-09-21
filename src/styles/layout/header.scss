@@ -14,6 +14,11 @@
     }
     .button {
       margin-left: auto;
+      width: 100%;
+      @media screen and (max-width: 48rem) {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
@@ -23,7 +28,6 @@
     }
   }
   .menu {
-    // position: absolute;
     @media screen and (max-width: 48rem) {
       padding-top: 3rem;
       position: absolute;
@@ -32,12 +36,12 @@
       transition: left 10ms;
       background: white;
       margin-top: 23rem;
-      // height: 50vh;
     }
     &.show {
       left: 0;
       background: white;
       position: absolute;
+      z-index: 20;
       @media screen and (max-width: 48rem) {
       }
     }
@@ -89,7 +93,7 @@
             flex-wrap: wrap;
             margin-top: 2rem;
             padding: 1.5rem;
-            .msc {
+            .submenu__container--single {
               width: 100%;
             }
             .submenu__content {
@@ -99,7 +103,7 @@
               .submenu__icon {
                 margin-top: 0.8rem;
               }
-              .submenu__content--hdl {
+              .submenu__hdl {
                 display: inline;
                 margin-left: 0rem;
                 &:hover {
@@ -111,7 +115,6 @@
           }
 
           .submenu__content {
-            // background: red;
             width: 100%;
           }
           .submenu__button-close {
@@ -158,13 +161,13 @@
       padding: 0;
       width: 1rem;
     }
-    .menu__submenu-container--left {
+    .submenu__container--left {
       width: calc((100%-19.375rem) / 2);
     }
-    .menu__submenu-container--right {
+    .submenu__container--right {
       width: calc((100%-19.375rem) / 2);
     }
-    .menu__submenu-container--img {
+    .submenu__container--img {
       max-width: 19.375rem;
       @media screen and (max-width: 48rem) {
         display: none;
@@ -194,10 +197,10 @@
       margin-top: 1.5rem;
       padding-right: 0.5rem;
     }
-    .submenu__content--hdl {
+    .submenu__hdl {
       margin-left: 1.625rem;
     }
-    .submenu__content-text {
+    .submenu__text {
       margin-left: 1.625rem;
     }
   }
@@ -205,8 +208,8 @@
     padding: 0;
     list-style-type: none;
     margin-left: 1.625rem;
-    .submenu-list__item {
-      .submenu__item-link {
+    .submenu__item {
+      .submenu__link {
         text-decoration: none;
         color: #000;
         &:hover {
@@ -216,7 +219,7 @@
     }
   }
 
-  .menu__item--link {
+  .menu__link {
     @include fontBold;
     text-decoration: none;
     margin-bottom: 0;

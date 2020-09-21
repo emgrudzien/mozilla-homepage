@@ -9,6 +9,9 @@
   position: relative;
   background: #ededf0;
   margin-bottom: 6rem;
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+  }
 
   .billboard__image-cointainer {
     .billboard__img {
@@ -19,16 +22,11 @@
   .billboard__content {
     width: 22.375rem;
     text-align: center;
-    .billboard__content-hdl {
+    .billboard__hdl {
       @include fontBilboardHdl;
     }
-    .billboard__content-text {
+    .billboard__text {
       @include font;
     }
-  }
-}
-@media (max-width: 780px) {
-  .billboard {
-    flex-direction: column;
   }
 }

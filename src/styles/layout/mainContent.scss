@@ -13,6 +13,9 @@ body {
   min-width: 19rem;
   padding: 1.5rem 6rem;
   flex-wrap: wrap;
+  @media screen and (max-width: 48rem) {
+    padding: 1.5rem;
+  }
   .main-content-primary {
     display: flex;
     width: 100%;
@@ -42,9 +45,6 @@ body {
         display: block;
         padding: 0;
         line-height: 52.8px;
-        @media screen and (max-width: 48rem) {
-          // display: inline-block;
-        }
       }
       .main-content-left__text {
         @include font;

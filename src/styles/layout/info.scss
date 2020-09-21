@@ -50,13 +50,14 @@
   }
   &__text {
     @include font;
+    text-indent: 0%;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 48rem) {
   .box {
     flex-direction: column;
     .info {
-      max-width: 100%;
+      width: 100%;
     }
   }
 }

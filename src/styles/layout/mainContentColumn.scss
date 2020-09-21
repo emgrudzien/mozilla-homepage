@@ -12,6 +12,9 @@
   float: left;
   padding: 0 3rem;
   width: 50%;
+  @media screen and (max-width: 48rem) {
+    padding: 1.5rem;
+  }
   .column__hdl {
     @include fontBilboardHdl;
     font-size: 1.5rem;
@@ -21,8 +24,8 @@
     text-align: left;
   }
   .column__list {
-    .column__list-item {
-      .column__list-item-link {
+    .column__item {
+      .column__link {
         @include fontBold;
         color: #0060df;
         line-height: 1.5;
@@ -33,9 +36,10 @@
     }
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 48rem) {
   .main-content-column {
     max-width: 100%;
+    padding: 0;
     .column-container {
       flex-direction: column;
       .column {
